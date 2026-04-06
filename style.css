@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFF8F0;
+    padding-top: 20px;
+}
+.contenedorCentrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    border-radius: 2px;
+}
+.contenedorCarta{
+    margin-top: 30px;
+    min-height: 950px;
+    max-height: none;
+    height: auto;
+    width: 50%;
+    border: 5px solid red;
+    border-radius: 2px;
+    padding: 40px 5%;
+    background-color: #fffdfa;
+    font-family: 'Georgia', serif;
+    color: #3a3a3a;
+    overflow-y: auto;
+}
+.contenedorCarta h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #b22222; 
+}
+
+.contenedorCarta p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.contenedorCarta strong {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #800000;
+    font-weight: 700;
+    margin-top: 20px;
+}
+button{
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    color: black;
+    background-color: #FFF8F0;
+    border: 2px solid red;
+    border-radius: 5px;
+    font-size: x-large;
+    transition: transform 0.1s ease;
+}
+button:active{
+    transform: scale(0.95);
+}
+#videoBtn {
+    display: none;
+    margin: 20px auto 0 auto;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    border: 2px solid #b22222;
+    background-color: #fffdfa;
+    color: #800000;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+#videoBtn:active {
+    transform: scale(0.95);
+}
+#stolasImg {
+    display: none;
+    margin: 25px auto;
+    max-width: 300px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    border: 4px solid #FFF8F0; /* borde claro que combine con el fondo */
+}
+
+
+
+/*Media querys*/
+
+/* --- Laptops medianos --- */
+@media (max-width: 1366px) {
+    .contenedorCarta {
+        width: 60%;
+        padding: 35px 25px;
+        /* mantener altura */
+    }
+}
+
+@media (max-width: 1024px) {
+    .contenedorCarta {
+        width: 70%;
+        padding: 30px 20px;
+        /* mantener altura */
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedorCarta {
+        width: 85%;
+        padding: 25px 15px;
+        /* mantener altura */
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedorCarta {
+        width: 90%;
+        padding: 20px 5%;
+        /* mantener altura */
+    }
+}
